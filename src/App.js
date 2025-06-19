@@ -1,124 +1,119 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function App() {
-  //–– Data stores
-  const [places, setPlaces]                   = useState([]);
-  const [placeDetails, setPlaceDetails]       = useState({});
-  const [restaurants, setRestaurants]         = useState({});
-  const [restaurantDetails, setRestaurantDetails] = useState({});
+  const [section, setSection] = useState('home');
+  const [places, setPlaces] = useState([]);
+  const [placeDetails, setPlaceDetails] = useState({});
+  const [restaurants, setRestaurants] = useState({});
+  const [restDetails, setRestDetails] = useState({});
+  const [selected, setSelected] = useState(null);
+  const [restType, setRestType] = useState('Indian');
 
-  //–– UI state
-  const [view, setView]                         = useState('home');           // 'home' | 'places' | 'restaurants'
-  const [selectedPlace, setSelectedPlace]       = useState(null);
-  const [selectedRestaurant, setSelectedRestaurant] = useState(null);
-  const [restaurantType, setRestaurantType]     = useState('Indian');        // 'Indian' | 'Multi'
-
-  // Load JSON from public/
   useEffect(() => {
     fetch('/mustVisit.json').then(r => r.json()).then(setPlaces);
     fetch('/placeDetails.json').then(r => r.json()).then(setPlaceDetails);
     fetch('/restaurants.json').then(r => r.json()).then(setRestaurants);
-    fetch('/restaurantDetails.json').then(r => r.json()).then(setRestaurantDetails);
+    fetch('/restaurantDetails.json').then(r => r.json()).then(setRestDetails);
   }, []);
 
-  //–– 1) Place Detail View
-  if (selectedPlace) {
-    const items = placeDetails[selectedPlace] || [];
+  // Home
+  if (section === 'home') {
     return (
-      <div className="p-8">
-        <button
-          className="mb-4 px-4 py-2 bg-gray-200 rounded"
-          onClick={() => {
-            setSelectedPlace(null);
-            setView('places');
-          }}
-        >
-          ← Back to Places
-        </button>
-        <h1 className="text-2xl font-bold mb-4">{selectedPlace}</h1>
-        <ul className="space-y-2">
-          {items.map((it, i) => (
-            <li key={i} className="border p-3 rounded">
-              <strong>{it.category}:</strong> {it.text}
-            </li>
-          ))}
-        </ul>
+      <div className="home">
+        <h1>Miami Explorer</h1>
+        <div className="buttons">
+          <button onClick={() => setSection('places')}>Places</button>
+          <button onClick={() => setSection('restaurants')}>Restaurants</button>
+        </div>
       </div>
     );
   }
 
-  //–– 2) Restaurant Detail View
-  if (selectedRestaurant) {
-    const items = restaurantDetails[selectedRestaurant] || [];
+  // Places Grid
+  if (section === 'places') {
     return (
-      <div className="p-8">
-        <button
-          className="mb-4 px-4 py-2 bg-gray-200 rounded"
-          onClick={() => {
-            setSelectedRestaurant(null);
-            setView('restaurants');
-          }}
-        >
-          ← Back to Restaurants
-        </button>
-        <h1 className="text-2xl font-bold mb-4">{selectedRestaurant}</h1>
-        <ul className="space-y-2">
-          {items.map((it, i) => (
-            <li key={i} className="border p-3 rounded">
-              <strong>{it.category}:</strong> {it.text}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-
-  //–– 3) Restaurants List View
-  if (view === 'restaurants') {
-    const list = restaurants[restaurantType] || [];
-    return (
-      <div className="p-8">
-        <button
-          className="mb-4 px-4 py-2 bg-gray-200 rounded"
-          onClick={() => {
-            setView('home');
-          }}
-        >
+      <div className="container">
+        <button className="backButton" onClick={() => setSection('home')}>
           ← Home
         </button>
-        <h1 className="text-3xl font-bold mb-4">Must-Visit Restaurants</h1>
-        <div className="flex space-x-4 mb-6">
+        <h2 className="heading">Must-Visit Miami Spots</h2>
+        <div className="grid">
+          {places.map((p, i) => (
+            <div
+              key={i}
+              className="card"
+              onClick={() => {
+                setSelected(p.title);
+                setSection('placeDetail');
+              }}
+            >
+              <img src={p.img} alt={p.title} />
+              <h2>{p.title}</h2>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Place Detail
+  if (section === 'placeDetail' && selected) {
+    const items = placeDetails[selected] || [];
+    return (
+      <div className="container">
+        <button className="backButton" onClick={() => setSection('places')}>
+          ← Back to Places
+        </button>
+        <h2 className="heading">{selected}</h2>
+        {items.map((it, i) => (
+          <div key={i} className="listItem">
+            <span>{it.category}:</span> {it.text}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // Restaurants Grid
+  if (section === 'restaurants') {
+    const list = restaurants[restType] || [];
+    return (
+      <div className="container">
+        <button className="backButton" onClick={() => setSection('home')}>
+          ← Home
+        </button>
+        <h2 className="heading">Must-Visit Restaurants</h2>
+        <div style={{ marginBottom: '1rem' }}>
           {['Indian', 'Multi'].map(type => (
             <button
               key={type}
-              onClick={() => setRestaurantType(type)}
-              className={
-                restaurantType === type
-                  ? 'px-4 py-2 border-b-2 border-blue-600 font-semibold'
-                  : 'px-4 py-2 text-gray-600'
-              }
+              onClick={() => setRestType(type)}
+              style={{
+                marginRight: '0.5rem',
+                background: restType === type ? '#4ECDC4' : 'transparent',
+                border: restType === type ? 'none' : '1px solid #4ECDC4',
+                color: restType === type ? 'white' : '#4ECDC4',
+                padding: '0.5rem 1rem',
+                borderRadius: '0.5rem',
+                cursor: 'pointer',
+              }}
             >
               Top 10 {type}
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid">
           {list.map((r, i) => (
             <div
               key={i}
+              className="card"
               onClick={() => {
-                setSelectedRestaurant(r.name);
+                setSelected(r.name);
+                setSection('restDetail');
               }}
-              className="cursor-pointer border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
             >
-              <img
-                src={r.img}
-                alt={r.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h2 className="text-lg font-medium">{r.name}</h2>
-              </div>
+              <img src={r.img} alt={r.name} />
+              <h2>{r.name}</h2>
             </div>
           ))}
         </div>
@@ -126,61 +121,23 @@ export default function App() {
     );
   }
 
-  //–– 4) Places List View
-  if (view === 'places') {
+  // Restaurant Detail
+  if (section === 'restDetail' && selected) {
+    const items = restDetails[selected] || [];
     return (
-      <div className="p-8">
-        <button
-          className="mb-4 px-4 py-2 bg-gray-200 rounded"
-          onClick={() => {
-            setView('home');
-          }}
-        >
-          ← Home
+      <div className="container">
+        <button className="backButton" onClick={() => setSection('restaurants')}>
+          ← Back to Restaurants
         </button>
-        <h1 className="text-3xl font-bold mb-6">Must-Visit Miami Spots</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {places.map((p, i) => (
-            <div
-              key={i}
-              onClick={() => {
-                setSelectedPlace(p.title);
-              }}
-              className="cursor-pointer border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
-            >
-              <img
-                src={p.img}
-                alt={p.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h2 className="text-lg font-medium">{p.title}</h2>
-              </div>
-            </div>
-          ))}
-        </div>
+        <h2 className="heading">{selected}</h2>
+        {items.map((it, i) => (
+          <div key={i} className="listItem">
+            <span>{it.category}:</span> {it.text}
+          </div>
+        ))}
       </div>
     );
   }
 
-  //–– 5) Home View
-  return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold mb-8">Miami Explorer</h1>
-      <div className="flex space-x-8">
-        <button
-          onClick={() => setView('places')}
-          className="px-6 py-4 bg-blue-600 text-white rounded-lg shadow"
-        >
-          Must-Visit Places
-        </button>
-        <button
-          onClick={() => setView('restaurants')}
-          className="px-6 py-4 bg-blue-600 text-white rounded-lg shadow"
-        >
-          Must-Visit Restaurants
-        </button>
-      </div>
-    </div>
-  );
+  return null;
 }
