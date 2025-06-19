@@ -1,0 +1,122 @@
+{
+  "South Beach": [
+    { "category": "Must-Do",   "text": "Swim in the turquoise waters at sunrise." },
+    { "category": "Must-Do",   "text": "Stroll along Ocean Drive and admire Art Deco architecture." },
+    { "category": "Fun Fact",   "text": "South Beach was the first Florida destination on the National Register of Historic Places." },
+    { "category": "Fun Fact",   "text": "The iconic lifeguard towers were designed by local artists." },
+    { "category": "Trivia",     "text": "It’s the setting for the TV show “Miami Vice.”" },
+    { "category": "Trivia",     "text": "Beach volleyball was invented here in 1920." },
+    { "category": "To-Do",      "text": "Grab a Cuban coffee from a sidewalk café." },
+    { "category": "To-Do",      "text": "Rent a bike and cruise the boardwalk." },
+    { "category": "Fun",        "text": "Join a sunset drum circle on the sand." },
+    { "category": "Fun",        "text": "People-watch at the Lincoln Road Mall promenade." }
+  ],
+  "Everglades National Park": [
+    { "category": "Must-Do",   "text": "Take an airboat tour in Shark Valley." },
+    { "category": "Must-Do",   "text": "Hike the Anhinga Trail at dawn." },
+    { "category": "Fun Fact",   "text": "It’s the largest subtropical wilderness in the U.S." },
+    { "category": "Fun Fact",   "text": "The park covers 1.5 million acres." },
+    { "category": "Trivia",     "text": "Home to 36 endangered plant species." },
+    { "category": "Trivia",     "text": "It was designated a World Heritage Site in 1979." },
+    { "category": "To-Do",      "text": "Kayak through Mangrove tunnels." },
+    { "category": "To-Do",      "text": "Visit the Gulf Coast Visitor Center." },
+    { "category": "Fun",        "text": "Spot alligators sunning on sawgrass." },
+    { "category": "Fun",        "text": "Photograph rare roseate spoonbills." }
+  ],
+  "Art Deco Historic District": [
+    { "category": "Must-Do",   "text": "Join a guided walking tour at sunset." },
+    { "category": "Must-Do",   "text": "Snap photos of neon-lit pastel façades." },
+    { "category": "Fun Fact",   "text": "Over 800 buildings here are protected landmarks." },
+    { "category": "Fun Fact",   "text": "Art Deco style peaked here in the 1930s." },
+    { "category": "Trivia",     "text": "Miami Beach’s historic district is the largest collection of Art Deco architecture in the world." },
+    { "category": "Trivia",     "text": "Many buildings were restored in the 1980s–’90s revival." },
+    { "category": "To-Do",      "text": "Browse vintage record shops on Collins Ave." },
+    { "category": "To-Do",      "text": "Enjoy open-air movies at Soundscape Park." },
+    { "category": "Fun",        "text": "Dine on retro-themed food trucks." },
+    { "category": "Fun",        "text": "Spot Frank Sinatra’s former hangout restaurants." }
+  ],
+  "Little Havana": [
+    { "category": "Must-Do",   "text": "Sip Cuban coffee at Versailles Café." },
+    { "category": "Must-Do",   "text": "Watch domino games at Máximo Gómez Park." },
+    { "category": "Fun Fact",   "text": "The Calle Ocho festival draws over 1 million visitors annually." },
+    { "category": "Fun Fact",   "text": "Little Havana was officially designated by Miami in 1973." },
+    { "category": "Trivia",     "text": "Many residents trace roots back to the 1959 Cuban Revolution." },
+    { "category": "Trivia",     "text": "Calle Ocho hosts the largest Cuban-American festival." },
+    { "category": "To-Do",      "text": "Check out live music at Ball & Chain venue." },
+    { "category": "To-Do",      "text": "Browse hand-rolled cigar shops." },
+    { "category": "Fun",        "text": "Try guava pastelitos from a local bakery." },
+    { "category": "Fun",        "text": "Snap street art murals down SW 8th St." }
+  ],
+  "Wynwood Walls": [
+    { "category": "Must-Do",   "text": "Walk the open-air street art galleries." },
+    { "category": "Must-Do",   "text": "Join a mural tour led by local artists." },
+    { "category": "Fun Fact",   "text": "Wynwood was once Miami’s warehouse district." },
+    { "category": "Fun Fact",   "text": "Over 80 artists from 45 countries have contributed murals." },
+    { "category": "Trivia",     "text": "Wynwood Walls opened in 2009." },
+    { "category": "Trivia",     "text": "The district spans over 50 blocks of art." },
+    { "category": "To-Do",      "text": "Browse indie boutiques and galleries." },
+    { "category": "To-Do",      "text": "Sip craft beers at Wynwood Brewing Co." },
+    { "category": "Fun",        "text": "Attend a monthly gallery walk event." },
+    { "category": "Fun",        "text": "Photograph ever-changing street murals." }
+  ],
+  "Vizcaya Museum & Gardens": [
+    { "category": "Must-Do",   "text": "Tour the Italian Renaissance–style mansion." },
+    { "category": "Must-Do",   "text": "Stroll through the formal European gardens." },
+    { "category": "Fun Fact",   "text": "Built between 1914–1922 by industrialist James Deering." },
+    { "category": "Fun Fact",   "text": "The estate covers 28 acres along Biscayne Bay." },
+    { "category": "Trivia",     "text": "Original furnishings were imported from Europe." },
+    { "category": "Trivia",     "text": "It served as a backdrop in movies like “Iron Man 3.”" },
+    { "category": "To-Do",      "text": "Sketch the central grotto fountain." },
+    { "category": "To-Do",      "text": "Visit the sculpture-filled maze garden." },
+    { "category": "Fun",        "text": "Enjoy a picnic on the bayfront lawn." },
+    { "category": "Fun",        "text": "Catch live classical concerts in winter." }
+  ],
+  "Bayside Marketplace": [
+    { "category": "Must-Do",   "text": "Shop waterfront boutiques and stalls." },
+    { "category": "Must-Do",   "text": "Take a boat tour from the marina." },
+    { "category": "Fun Fact",   "text": "Opened in 1987 on the former Miami Municipal Pier." },
+    { "category": "Fun Fact",   "text": "Features over 150 shops and restaurants." },
+    { "category": "Trivia",     "text": "Often hosts live music and cultural events." },
+    { "category": "Trivia",     "text": "Part of the City of Miami’s Bayside Park." },
+    { "category": "To-Do",      "text": "Dine on seafood with bay views." },
+    { "category": "To-Do",      "text": "Snap photos of passing cruise ships." },
+    { "category": "Fun",        "text": "Ride the Zip Line over the marina." },
+    { "category": "Fun",        "text": "Catch fireworks on holiday weekends." }
+  ],
+  "Coconut Grove": [
+    { "category": "Must-Do",   "text": "Wander the shady streets of the historic village." },
+    { "category": "Must-Do",   "text": "Relax at Peacock Park by the bay." },
+    { "category": "Fun Fact",   "text": "Founded in 1873, it’s Miami’s oldest neighborhood." },
+    { "category": "Fun Fact",   "text": "Was an artists’ colony in the 20th century." },
+    { "category": "Trivia",     "text": "The original name was “Cocoanut Grove.”" },
+    { "category": "Trivia",     "text": "It hosts the annual King Mango Strut parade." },
+    { "category": "To-Do",      "text": "Shop at boutique stores in CocoWalk." },
+    { "category": "To-Do",      "text": "Kayak through Biscayne Bay mangroves." },
+    { "category": "Fun",        "text": "Dine at waterfront cafés and bistros." },
+    { "category": "Fun",        "text": "Attend live jazz nights at The Ritz." }
+  ],
+  "Key Biscayne Bike Trail": [
+    { "category": "Must-Do",   "text": "Cycle the 10-mile Rickenbacker Trail." },
+    { "category": "Must-Do",   "text": "Enjoy bayside views along the route." },
+    { "category": "Fun Fact",   "text": "Named after WWI ace Eddie Rickenbacker." },
+    { "category": "Fun Fact",   "text": "Connects to Matheson Hammock Park." },
+    { "category": "Trivia",     "text": "Trail is fully paved and mostly flat." },
+    { "category": "Trivia",     "text": "You’ll cross over historic Old Cutler Bridge." },
+    { "category": "To-Do",      "text": "Pack a picnic for Bill Baggs State Park." },
+    { "category": "To-Do",      "text": "Stop at the Cape Florida Lighthouse." },
+    { "category": "Fun",        "text": "Bird-watch along the shoreline." },
+    { "category": "Fun",        "text": "Rent a tandem bike for two." }
+  ],
+  "Venetian Pool (Coral Gables)": [
+    { "category": "Must-Do",   "text": "Swim in the historic spring-fed pool." },
+    { "category": "Must-Do",   "text": "Relax under waterfalls and caves." },
+    { "category": "Fun Fact",   "text": "Created in 1923 from a coral rock quarry." },
+    { "category": "Fun Fact",   "text": "It’s the world’s largest freshwater pool." },
+    { "category": "Trivia",     "text": "Filmed in scenes of “3 to Tango” movie." },
+    { "category": "Trivia",     "text": "Maintains its 80°F spring water year-round." },
+    { "category": "To-Do",      "text": "Grab a gelato at the poolside café." },
+    { "category": "To-Do",      "text": "Walk the terracotta bridges around the pool." },
+    { "category": "Fun",        "text": "Visit on Wednesday evenings for jazz nights." },
+    { "category": "Fun",        "text": "Take photos from the upper viewing balcony." }
+  ]
+}
