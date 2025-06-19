@@ -1,0 +1,26 @@
+{
+  "Indian": [
+    { "name": "Bombay Darbar",       "img": "https://source.unsplash.com/800x600/?indian-food,curry" },
+    { "name": "Tandoor House",       "img": "https://source.unsplash.com/800x600/?tandoori,miami" },
+    { "name": "Dosa Hut",            "img": "https://source.unsplash.com/800x600/?dosa,indian" },
+    { "name": "Curry Leaves",        "img": "https://source.unsplash.com/800x600/?curry-leaves,miami" },
+    { "name": "Masala Bay",          "img": "https://source.unsplash.com/800x600/?masala,miami" },
+    { "name": "Spice Avenue",        "img": "https://source.unsplash.com/800x600/?indian-restaurant" },
+    { "name": "The Spice Room",      "img": "https://source.unsplash.com/800x600/?spicy,indian" },
+    { "name": "Tabla Indian Bistro", "img": "https://source.unsplash.com/800x600/?biryani,indian" },
+    { "name": "Chola’s Cuisine",     "img": "https://source.unsplash.com/800x600/?south-indian,miami" },
+    { "name": "Saffron Grill",       "img": "https://source.unsplash.com/800x600/?saffron,indian" }
+  ],
+  "Multi": [
+    { "name": "Seaspice",            "img": "https://source.unsplash.com/800x600/?seafood,restaurant" },
+    { "name": "Zuma Miami",          "img": "https://source.unsplash.com/800x600/?fine-dining,miami" },
+    { "name": "CVS Italian Menu",    "img": "https://source.unsplash.com/800x600/?pasta,miami" },
+    { "name": "Mandolin Aegean",     "img": "https://source.unsplash.com/800x600/?mediterranean,miami" },
+    { "name": "The Local House",     "img": "https://source.unsplash.com/800x600/?beachfront,dining" },
+    { "name": "The River Oyster Bar","img": "https://source.unsplash.com/800x600/?oysters,miami" },
+    { "name": "El Tucán",            "img": "https://source.unsplash.com/800x600/?latin,miami" },
+    { "name": "Billionaire Italian", "img": "https://source.unsplash.com/800x600/?luxury,restaurant" },
+    { "name": "KYU",                 "img": "https://source.unsplash.com/800x600/?asian-fusion,miami" },
+    { "name": "CVI.CHE 105",         "img": "https://source.unsplash.com/800x600/?ceviche,miami" }
+  ]
+}
