@@ -1,26 +1,26 @@
 {
   "Indian": [
-    { "name": "Bombay Darbar",       "img": "https://source.unsplash.com/800x600/?indian-food,curry" },
-    { "name": "Tandoor House",       "img": "https://source.unsplash.com/800x600/?tandoori,miami" },
-    { "name": "Dosa Hut",            "img": "https://source.unsplash.com/800x600/?dosa,indian" },
-    { "name": "Curry Leaves",        "img": "https://source.unsplash.com/800x600/?curry-leaves,miami" },
-    { "name": "Masala Bay",          "img": "https://source.unsplash.com/800x600/?masala,miami" },
-    { "name": "Spice Avenue",        "img": "https://source.unsplash.com/800x600/?indian-restaurant" },
+    { "name": "Bombay Darbar",       "img": "/images/bombay-darbar.jpg" },
+    { "name": "Tandoor House",       "img": "/images/tandoor-house.jpg" },
+    { "name": "Dosa Hut",            "img": "/images/dosa-hut.jpg" },
+    { "name": "Curry Leaves",        "img": "/images/curry-leaves.jpg" },
+    { "name": "Masala Bay",          "img": "/images/masala-bay.jpg" },
+    { "name": "Spice Avenue",        "img": "/images/spice-avenue.jpg" },
     { "name": "The Spice Room",      "img": "https://source.unsplash.com/800x600/?spicy,indian" },
-    { "name": "Tabla Indian Bistro", "img": "https://source.unsplash.com/800x600/?biryani,indian" },
-    { "name": "Chola’s Cuisine",     "img": "https://source.unsplash.com/800x600/?south-indian,miami" },
-    { "name": "Saffron Grill",       "img": "https://source.unsplash.com/800x600/?saffron,indian" }
+    { "name": "Tabla Indian Bistro", "img": "/images/tabla-restaurant.jpg" },
+    { "name": "Chola’s Cuisine",     "img": "/images/chola-restaurant.jpg" },
+    { "name": "Saffron Grill",       "img": "/images/saffron-grill.jpg" }
   ],
   "Multi": [
-    { "name": "Seaspice",            "img": "https://source.unsplash.com/800x600/?seafood,restaurant" },
-    { "name": "Zuma Miami",          "img": "https://source.unsplash.com/800x600/?fine-dining,miami" },
+    { "name": "Seaspice",            "img": "/images/seaspice.jpg" },
+    { "name": "Zuma Miami",          "img": "/images/zuma-miami.jpg" },
     { "name": "CVS Italian Menu",    "img": "https://source.unsplash.com/800x600/?pasta,miami" },
-    { "name": "Mandolin Aegean",     "img": "https://source.unsplash.com/800x600/?mediterranean,miami" },
-    { "name": "The Local House",     "img": "https://source.unsplash.com/800x600/?beachfront,dining" },
-    { "name": "The River Oyster Bar","img": "https://source.unsplash.com/800x600/?oysters,miami" },
-    { "name": "El Tucán",            "img": "https://source.unsplash.com/800x600/?latin,miami" },
-    { "name": "Billionaire Italian", "img": "https://source.unsplash.com/800x600/?luxury,restaurant" },
-    { "name": "KYU",                 "img": "https://source.unsplash.com/800x600/?asian-fusion,miami" },
-    { "name": "CVI.CHE 105",         "img": "https://source.unsplash.com/800x600/?ceviche,miami" }
+    { "name": "Mandolin Aegean",     "img": "/images/mandolin-aegon.jpg" },
+    { "name": "The Local House",     "img": "/images/local-house.jpg" },
+    { "name": "The River Oyster Bar","img": "/images/river-oyster.jpg" },
+    { "name": "El Tucán",            "img": "/images/el-tucan.jpg" },
+    { "name": "Billionaire Italian", "img": "/images/billionaire-italian.jpg" },
+    { "name": "KYU",                 "img": "/images/kyu.jpg" },
+    { "name": "CVI.CHE 105",         "img": "/images/cvi.jpg" }
   ]
 }
