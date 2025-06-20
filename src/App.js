@@ -20,6 +20,11 @@ export default function App() {
   if (section === 'home') {
     return (
       <div className="home">
+      {/* New quote line */}
+      <p className="quote">
+        “A place is only a backdrop until you fill it with laughter, memories, and the company of friends.”  
+        <br/>— TK
+      </p>
         <h1>Miami Explorer</h1>
         <div className="buttons">
           <button onClick={() => setSection('places')}>Places</button>
